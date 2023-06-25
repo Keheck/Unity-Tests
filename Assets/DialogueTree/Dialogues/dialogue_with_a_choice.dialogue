@@ -1,0 +1,44 @@
+[Character1]
+[Happy]
+The dialogue format can also handle branching choices!
+
+?Isn't that exciting?
+!Yes
+!No
+{Yes}
+I know right!
+{No}
+[Sad]
+Oh, that's kind of disappointing...
+
+{Converge (Yes, No)}
+Anyway, you can use the Converge directive with the choices in parentheses to get back on track, if two choices end in the same dialogue later.
+[Happy]
+As you might have noticed, the emotion will only update on convergence if it is explicitly specified. Replay this dialogue and choose the other option!
+Not using the converge command is valid, it will just end the dialogue when the choice ends.
+As a side note, you can also use multiple convergence commmands for the same question!
+
+?What is 2+2/2?
+!3
+!4
+!5
+{3}
+[Happy]
+That is correct! Remember that division comes before addition!
+{4}
+[Doubt]
+Ah, seems you have done a slight slipup...
+{5}
+[Angry]
+How the hell can you make such a mistake?
+
+{Converge (3, 4)}
+It seems that you have some potential in math
+{Converge (5)}
+You're damn hopeless
+{Converge}
+
+[Happy]
+Anyway, after using partial convergence you can continue to converge further to get all questions back on the same branch.
+You can also omit the parentheses for the answers in the converge command to implicitly have all answers converge onto its branch.
+In this case, {Converge} is equivalent to {Converge (3, 4, 5)}

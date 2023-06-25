@@ -1,0 +1,12 @@
+[Character1]
+[Happy]
+Oh, hey there! This is a basic dialogue with just one character.
+With a new line you can determine the next dialogue text.
+When there are a lot of characters, the text boc immediately wraps around.
+
+[Sad]
+You can also change the emotion on the fly...
+[Neutral]
+...by using [emotion] on a single line
+
+Empty lines will be omited. Makes it easier for the developer.
